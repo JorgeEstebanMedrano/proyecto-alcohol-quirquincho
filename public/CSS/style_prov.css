@@ -1,0 +1,161 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2,h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.users-table {
+    margin-left: 220px; /* Adjust according to sidebar width */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+        padding: 10px;
+        text-align: center;
+    }
+    .users-table {
+        margin-left: 0;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+    td {
+        padding: 10px;
+        border: none;
+        position: relative;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+/* Asegúrate de que los estilos se apliquen solo al formulario */
+.users-form {
+    /* Ejemplo de estilos */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.users-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.users-form input, .users-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.users-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.users-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ /* Estilo para ocultar los incrementadores en navegadores WebKit (Chrome, Safari) */
+ input[type="number"]::-webkit-outer-spin-button,
+ input[type="number"]::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+ 
+ 
+ #empleados[disabled], #proveedores[disabled] {
+    pointer-events: none;
+}

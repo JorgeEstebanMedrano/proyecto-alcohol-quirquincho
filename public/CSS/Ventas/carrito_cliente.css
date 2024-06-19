@@ -1,0 +1,89 @@
+.productoCarrito{
+    width: fit-content;
+    padding: 0.2vw 0.2vh;
+    margin: auto;
+    margin-top: 0.5vh;
+    margin-right: 0.5vh;
+    margin-right: 0.5vh;
+    margin-right: 0.5vh;
+    background-color: grey;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 2vw;
+    border-color: black;
+    border-style: solid;
+}
+.productos{
+    margin: auto;
+}
+.formPago{
+    width: fit-content;
+    padding: 0.5vh;
+    margin: auto;
+    margin-top: 0.5vh;
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5vh;
+    font-size: 3.2vh;
+    border-color: black;
+    border-style: solid;
+}
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.buttonGreen{
+    margin: auto;
+    background-color: green;
+    border-radius: 1.5vh;
+    color: white;
+    font-size: 3vh;
+    transition: all 0.2s ease;
+}
+.buttonGreen:hover{
+    background-color: darkred;
+    font-size: 3.2vh;
+    transition: all 0.2s ease;
+}
+body{
+    background-image: url("./../background_nigth.jpg");
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+}
+.productos tbody tr{
+    background-color: white;
+    color: darkblue;
+    font-size: 5vh;
+}
+.productos thead{
+    color: white;
+    background-color: blue;
+    font-size: 5vh;
+}
+h2{
+    color: white;
+}
+label{
+    color: white;
+}
+a{
+    width: 80%;
+    display: inline;
+    color: white;
+    font-style: normal;
+}
+img{
+    width: 20vw;
+    height: 25vh;
+    border-radius: 30px;
+    border: 0.25vw grey solid;
+}

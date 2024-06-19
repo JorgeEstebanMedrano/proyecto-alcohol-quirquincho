@@ -1,0 +1,197 @@
+.productoCarrito{
+    font-size: 3vh;
+    height: 53vh;
+    width: fit-content;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 0.5vh;
+    margin-right: 0.5vh;
+    background-color: grey;
+    text-align: center;
+    border-radius: 2vw;
+    border-color: black;
+    border-style: solid;
+}
+.title{
+    font-size: 6vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cantidad{
+    width: 6vw;
+    font-size: 2.5vh;
+    opacity: 0.8;
+    background-color: ghostwhite;
+    border-radius: 2vh;
+}
+.boton{
+    margin: auto;
+    border: 0.5vh;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1.5vh;
+    font-size: 3vh;
+}
+.button{
+    margin-top: 0.5vh;
+    border: gainsboro 0.25vw solid;
+    padding: 0.25vh;
+    background-color: darkgray;
+    border-style: solid;
+    border-radius: 1.5vh;
+    font-size: 3vh;
+    transition: all 0.2s ease;
+}
+.button:hover{
+    margin-top: 0.5vh;
+    border: black 0.25vw solid;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-radius: 1.5vh;
+    font-size: 3vh;
+    transition: all 0.2s ease;
+}
+.productos{
+    margin: auto;
+}
+.imagen{
+    height: 25vh;
+}
+/*Pagina realizar Orden*/
+.formPago{
+    width: fit-content;
+    padding: 0.5vh;
+    margin: auto;
+    margin-top: 0.5vh;
+    background-color: grey;
+    text-align: center;
+    border-radius: 1.5vh;
+    font-size: 3.2vh;
+    border-color: black;
+    border-style: solid;
+}
+/*Titulo del formulario*/
+.formPago h2{
+    font-size: 5vh;
+}
+/* Inputs del formulario */
+.formPago input{
+    font-size: 2.5vh;
+    width: fit-content;
+    max-height: fit-content;
+}
+.formPago input[type=radio]{
+    width: 2vh;
+    height: 2vh;
+}
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5vh;
+    width: fit-content;
+    margin: auto;
+}
+.buttonGreen{
+    margin: auto;
+    background-color: green;
+    border-radius: 1.5vh;
+    color: white;
+    font-size: 3vh;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url("./../Background.jpg");
+    background-size: cover;
+}
+.productos{
+    width: 80%;
+    max-width: fit-content;
+}
+.productos tbody tr{
+    background-color: white;
+    color: darkblue;
+    font-size: 3vh;
+    margin: 0.2vh;
+    border: 2px solid red;
+}
+.productos thead{
+    color: white;
+    background-color: blue;
+    font-size: 5vh;
+}
+/*Para los divs de la seleccion de productos*/
+.Articulos{
+    margin: auto;
+    min-width: fit-content;
+    color: black;
+    padding: 1.5vh;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 20px;
+}
+/*Para un articulo especifico*/
+.articulo{
+    padding: 1vh;
+    width: fit-content;
+    margin: auto;
+}
+/*Estilo para el select del articulo*/
+.articulo select{
+    min-width: 18vw; 
+    max-width: fit-content;
+    height: fit-content; 
+    background-color: rgba(128, 128, 128, 0.8); 
+    color: rgba(255, 255, 255, 0.9); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 0.5vh; 
+    box-shadow: 0 1.5vh 1vh rgba(0, 0, 0, 0.1); 
+    padding: 0.5vh;
+    outline: none; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.articulo select:hover{
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+.articulo select option{
+    background-color: rgba(128, 128, 128, 0.9); /* Fondo de las opciones */
+    color: rgba(255, 255, 255, 0.9); /* Color de las opciones */
+}
+.articulo select option:checked{
+    background-color: rgba(128, 128, 128, 0.9); /* Más oscuro al enfocar */
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2); /* Sombra un poco más fuerte */
+}
+/*Estilo para los input*/
+.Articulos input{
+    min-width: 4vw;
+    max-width: 8vw;
+    font-size: 2vh;
+}
+/*Estilo para los botones*/
+.Articulos button{
+    min-width: 4vw;
+    max-width: fit-content;
+    font-size: 2vh;
+}
+.ventas{
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    align-items: center;
+}
+/*Utilizado para los subtitulos*/
+.subtitulo{
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    font-family: 'Gill Sans';
+    font-size: 3vh;
+}
+.r{
+    width: 100%;
+}
